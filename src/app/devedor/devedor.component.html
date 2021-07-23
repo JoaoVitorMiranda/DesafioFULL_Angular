@@ -1,0 +1,45 @@
+<div class="ui-g" *ngIf="listDevedores">
+    <div class="ui-g-12 ui-md-12 ui-lg-12">
+        <h1>Devedores</h1>
+        <hr>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">Número do título</th>
+                  <th scope="col">Nome do devedor</th>
+                  <th scope="col">Qtde de parcelas</th>
+                  <th scope="col">Valor original</th>
+                  <th scope="col">Dias em atraso</th>
+                  <th scope="col">Valor atualizado na data de hoje</th>
+                </tr>
+                </thead>
+
+        <!-- {{listDevedores | json}} -->
+
+        <tbody>
+            <tr *ngFor="let devedor of listDevedores; index as i">
+              <td>
+                {{ devedor.NumeroTitulo }}
+              </td>
+              <td>
+                {{ devedor.Nome }}
+              </td>
+              <td>
+               
+              </td>
+              <td>
+              
+              </td>
+              <td>
+            
+              </td>
+              <td>
+                
+              </td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
